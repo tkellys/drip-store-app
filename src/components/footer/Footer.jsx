@@ -2,40 +2,47 @@ import React from 'react'
 
 export const Footer = () => {
   return (
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
-    <div class="row">
+    <footer id="footer" class="pt-4 my-md-5 pt-md-5 border-top">
+    <div id="footercss" class="row">
       <div class="col-12 col-md">
-        <img class="mb-2" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="24" height="19"/>
-        <small class="d-block mb-3 text-body-secondary">© 2017–2023</small>
+        <img class="logo-footer" src="src\assets\logo footer.png" alt="logo-footer"/>
+        <ul class="list-unstyled text-small"><br></br>
+        <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</a></li><br />
+        <img class="logo-footer" src="src\assets\Group redes sociais.png" alt="logo-footer"/>
+        </ul>
       </div>
+
       <div class="col-6 col-md">
-        <h5>Features</h5>
+        <h5>Informação</h5>
         <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Cool stuff</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Random feature</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team feature</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Stuff for developers</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another one</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Last time</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Sobre Drip Store</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Segurança</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Wishlist</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Blog</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Trabalhe Conosco</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Meus pedidos</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h5>Resources</h5>
+        <h5>Categorias</h5>
         <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Resource name</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Another resource</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Final resource</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Camisetas</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Calças</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Bonés</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Headphones</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Tênis</a></li>
         </ul>
       </div>
       <div class="col-6 col-md">
-        <h5>About</h5>
+        <h5>Contato</h5>
         <ul class="list-unstyled text-small">
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Team</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Locations</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Privacy</a></li>
-          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Terms</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">Av. Santos Dumont, 1510 - 1 andar - Aldeota, Fortaleza - Ce, 60150-161</a></li>
+          <li class="mb-1"><a class="link-secondary text-decoration-none" href="#">(85) 3051-3411</a></li>
+
         </ul>
+      </div>
+        <div class="pt-4 my-md-5 pt-md-3 border-top">
+      <small class="d-block mb-2 text-center text-body-secondary">© 2017–2023</small>
       </div>
     </div>
   </footer>

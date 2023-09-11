@@ -1,0 +1,12 @@
+#nome-loja{
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    text-align: left;
+    color: #C92071; 
+}
+.nav-link{
+    color: #C92071;
+}
