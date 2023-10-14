@@ -1,41 +1,51 @@
 import React from "react"
-import { Image } from "react-bootstrap"
-
+import './MenuBar.css'
+import logo from '../../assets/logo/logo.svg'
+import carrinho from '../../assets/iconesBrands/carrinho.svg'
+import {Col, Container, Navbar, Row} from "react-bootstrap"
+import { Navegacao } from "../Navegacao/Navegacao";
+import { InputPesquisa } from "../barraDePesquisa/InputPesquisa";
+import { ButtonOficial } from "../botao/Botao"
 
 export const MenuBar = () => {
     return( 
-<header class="p-3 text-bg-dark">
-    <div class="container">
-      <div class="justify-content-center">
-          <Image class="bi me-2" width="40" height="32" role="img" aria-label="College" src="src\assets\logoDC.png"/>
-          <a href="/" id="nome-loja" class="align-self-end text-decoration-none">Digital Store
-          </a>
+<div>
+<Container className="topoPagina">
 
-          <div class="container d-flex flex-wrap justify-content-center">
-          <form class="d-flex align-items-start justify-content-center" role="search">
-          <input type="search" class="form-control form-control-dark text-bg-white" placeholder="Tenis..." aria-label="Search">
-          </input>
-          </form> 
-
-        <div class="col-2 d-flex align-items-top justify-content-center">
-          <button type="button" class="btn btn-outline-light me-2">Login</button>
-          <button type="button" class="btn btn-warning">Sign-up</button>
+  <Navbar style={{paddingTop: '2em', paddingBottom: '2em'}}>
+    <Col md={12}>
+      <Row>
+      <div class="hstack gap-3">
+        <Col md={2} class="ms-auto"> 
+        <a className="logo text-decoration-none d-flex ms-auto" href="/">
+          <img src={logo}/>
+          <div className="titulo ms-auto">Digital Store</div>
+        </a>
+        </Col>
+        <Col md={4} className="ms-auto"> 
+          <InputPesquisa/>
+        </Col>
+        <Col md={1} className="ms-auto"> 
+        <a href="/cadastro" className="cadastrese"> Cadastre-se</a>
+        </Col>
+        <Col md={2}>
+        <ButtonOficial nome='Entrar' className="ms-auto"/>
+        </Col>
+        <Col md={2} class="ms-auto">
+        <img src={carrinho} alt="logoCarrinho"/>
+        </Col>
         </div>
+      </Row>
+    </Col>
+  </Navbar>
 
-        <div class="container d-flex flex-wrap justify-content-center">
-        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 mb-md-0">
-          <li><a href="#" class="align-self-end nav-link px-3 text-secondary">Home</a></li>
-          <li><a href="#" class="nav-link px-3 text-white">Produtos</a></li>
-          <li><a href="#" class="nav-link px-3 text-white">Categorias</a></li>
-          <li><a href="#" class="nav-link px-3 text-white">Meus Pedidos</a></li>
-      
-        </ul>
-
-      </div>
-      </div>
-    </div>
-    </div>
-  </header>
-  )
-  }
+  <Col md={12} style={{}}>
+    <Row>
+   <Navegacao/>
+   </Row>
+  </Col>
+</Container>
+</div>
+  );
+  };
 

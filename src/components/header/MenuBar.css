@@ -1,3 +1,10 @@
+.topoPagina{
+    background-color: #FFFFFF !important;
+    width: 1440px !important;
+    height: 192px !important;
+
+}
+
 #nome-loja{
     font-family: Inter;
     font-size: 36px;

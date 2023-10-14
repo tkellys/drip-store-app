@@ -1,3 +1,10 @@
-.backgroundfooter {
-    background-color: black;
+.footer {
+    background-color: #1F1F1F !important;
+}
+
+div.footer a , h5, span{
+    color: #FFFFFF !important;
+}
+#data-desenvolvimento{
+    color: #FFFFFF !important;
 }
