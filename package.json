@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@mui/material": "^5.14.16",
+    "@mui/styled-engine": "^5.14.16",
     "@tabler/core": "^1.0.0-beta20",
     "axios": "^1.5.0",
     "bootstrap": "^5.3.1",
