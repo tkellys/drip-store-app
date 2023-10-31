@@ -1,0 +1,76 @@
+.circle {
+    width: 104px;
+    height: 104px;
+    background: white;
+    -moz-border-radius: 52px;
+    -webkit-border-radius: 52px;
+    border-radius: 52px;
+    padding-top: 1em;
+}
+
+.colecoes-destaque {
+    padding: 100px 0 20px !important;
+    font-family: Inter, sans-serif !important;
+    font-size: 31px !important;
+  
+
+}
+
+p {
+    color: #474747
+}
+
+.card {
+    background-color: #d8e3f2 !important;
+    border-color: #d8e3f2 !important;
+    border-radius: 8px !important;
+    height: 251px !important;
+    justify-content: space-around !important;
+    padding: 34px 30px !important;
+    width: 405px !important;
+
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+    background-position-x: 10em !important;
+   
+}
+
+.off {
+    align-items: center;
+    background-color: #e7ff86;
+    border-radius: 29px;
+    color: #474747;
+    display: flex;
+    font-weight: 700;
+    height: 32px;
+    justify-content: center;
+    padding: 5px 15px;
+    position: relative;
+    white-space: nowrap;
+    width: 96px;
+    z-index: 3;
+}
+
+.titulo-card {
+    color: #1f1f1f !important;
+    font-family: Inter,sans-serif !important;
+    font-size: 31px !important;
+    font-style: normal !important;
+    font-weight: 700 !important;
+    height: 72px !important;
+    letter-spacing: 2px !important;
+    line-height: 35px !important ;
+    margin: 10px 0 20px !important;
+    width: 82px !important ;
+    display: inline-table;
+}
+
+#root > div > div > div.container.text-center > div > div > button{
+    width: 96px;
+    background-color: #F5F5F5 !important;
+    color: #c92071;
+    margin-top: 20px;
+    position: relative;
+
+
+}

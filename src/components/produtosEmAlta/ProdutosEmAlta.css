@@ -1,0 +1,65 @@
+.card-colecao {
+    padding: 1em 0em 12em 1em !important;
+    background-color: white !important;
+    border-color: white !important;
+    border-radius: 8px !important;
+    height: 256px !important;
+    width: 256px !important;
+    background-repeat: no-repeat !important;
+    background-position: right !important;
+}
+
+.categoria {
+    color: #8F8F8F !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    line-height: 24px !important;
+    letter-spacing: 0.75px !important;
+    font-family: Inter, sans-serif !important;
+}
+
+.produto {
+    color: #474747 !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 38px !important;
+    letter-spacing: 0.75px !important;
+    font-family: Inter, sans-serif !important;
+}
+
+.preco-antes {
+    color: #8F8F8F !important;
+    text-decoration: line-through !important;
+    font-weight: 400 !important;
+    font-size: 24px !important;
+    line-height: 38px !important;
+    letter-spacing: 0.75px !important;
+    font-family: Inter, sans-serif !important;
+    padding-right: 0.5em !important;
+}
+
+.preco-depois {
+    color: #1F1F1F !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+    line-height: 38px !important;
+    letter-spacing: 0.75px !important;
+    font-family: Inter, sans-serif !important;
+}
+
+
+.off {
+    align-items: center !important;
+    background-color: #e7ff86 !important;
+    border-radius: 29px !important;
+    color: #474747 !important;
+    display: flex !important;
+    font-weight: 700 !important;
+    height: 32px !important;
+    justify-content: center !important;
+    padding: 5px 15px !important;
+    position: relative;
+    white-space: nowrap !important;
+    width: 96px !important;
+    z-index: 3 !important;
+}

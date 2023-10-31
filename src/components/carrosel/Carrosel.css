@@ -1,0 +1,31 @@
+.melhores-ofertas {
+    /* font-family: 'Inter'; */
+    font-weight: 500;
+    font-size: 16px;
+    color: #f6aa1c;
+}
+
+.queima {
+    font-size: 3.3rem;
+    font-weight: 900;
+    line-height: 1;
+}
+.ornamento {
+    margin-top: 40% !important;
+}
+
+.descricao {
+    font-size: 18px;
+    color: #474747;
+}
+
+.carousel-indicators > .active {
+           
+        background-color: #c92071 !important;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+}

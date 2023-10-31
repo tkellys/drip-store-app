@@ -1,0 +1,32 @@
+.cabecalho{
+    font-family: Inter !important;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    line-height: 44px !important;
+    letter-spacing: -0.01em !important;
+    text-align: left !important;
+    color: #C92071 !important;
+    margin-top: 10px !important ;
+}
+
+.imagem-logo{  
+    margin-top: 15px;    
+}
+
+.paper {
+    background-color: #FFFFFF;
+    padding: 16px;
+}
+
+.botao{
+    background-color: #C92071 !important;
+}
+
+.menu{
+    background-color: #FFFFFF;
+    height: 192px;
+}
+
+.menu > div{
+   margin-top: auto;
+}
