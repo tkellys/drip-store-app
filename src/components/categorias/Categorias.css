@@ -1,0 +1,21 @@
+.circle {
+    width: 104px;
+    height: 104px;
+    background: white;
+    -moz-border-radius: 52px;
+    -webkit-border-radius: 52px;
+    border-radius: 52px;
+    padding-top: 1em;
+}
+
+.colecoes-destaque {
+    padding: 100px 0 20px;
+    font-family: Inter, sans-serif;
+}
+
+p {
+    color: #474747
+}
+
+
+

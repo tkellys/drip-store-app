@@ -1,51 +1,51 @@
 import React from "react"
-import './MenuBar.css'
-import logo from '../../assets/logo/logo.svg'
-import carrinho from '../../assets/iconesBrands/carrinho.svg'
-import {Col, Container, Navbar, Row} from "react-bootstrap"
-import { Navegacao } from "../Navegacao/Navegacao";
-import { InputPesquisa } from "../barraDePesquisa/InputPesquisa";
-import { ButtonOficial } from "../botao/Botao"
 
-export const MenuBar = () => {
-    return( 
-<div>
-<Container className="topoPagina">
+import { Grid, TextField, Link, Button } from "@mui/material";
+import Navegacao from "../Navegacao/Navegacao.jsx";
+import logo from "../../assets/logo/logo.svg"
+import carrinho from "../../assets/iconesBrands/carrinho.svg"
 
-  <Navbar style={{paddingTop: '2em', paddingBottom: '2em'}}>
-    <Col md={12}>
-      <Row>
-      <div class="hstack gap-3">
-        <Col md={2} class="ms-auto"> 
-        <a className="logo text-decoration-none d-flex ms-auto" href="/">
-          <img src={logo}/>
-          <div className="titulo ms-auto">Digital Store</div>
-        </a>
-        </Col>
-        <Col md={4} className="ms-auto"> 
-          <InputPesquisa/>
-        </Col>
-        <Col md={1} className="ms-auto"> 
-        <a href="/cadastro" className="cadastrese"> Cadastre-se</a>
-        </Col>
-        <Col md={2}>
-        <ButtonOficial nome='Entrar' className="ms-auto"/>
-        </Col>
-        <Col md={2} class="ms-auto">
-        <img src={carrinho} alt="logoCarrinho"/>
-        </Col>
-        </div>
-      </Row>
-    </Col>
-  </Navbar>
+import "./MenuBar.css";
 
-  <Col md={12} style={{}}>
-    <Row>
-   <Navegacao/>
-   </Row>
-  </Col>
-</Container>
-</div>
-  );
-  };
 
+export default function MenuBar() {
+    
+
+    return (
+      <>
+      <Grid item xs={12} className="menu">
+            <Grid className="paper" container spacing={2}>        
+                <Grid item xs={12} md={2} display={"flex"} paddingLeft={"100px !important"} >
+                    <Grid item xs={12} md={2}>
+                        <img className="imagem-logo" src={logo}  /> 
+                    </Grid>
+                    <Grid item xs={12} md={10}>
+                         <h4 className="cabecalho"> Digital Store </h4>
+                    </Grid>    
+                </Grid>
+
+                <Grid item xs={12} md={8}>
+                    <TextField id="pesquisa" label="Pesquisar produto..." variant="outlined" fullWidth margin="dense" size="small"/>          
+                </Grid> 
+
+                <Grid item xs={12} md={2} display={"flex"} marginTop={"10px"}>
+                    <Grid item xs={12} md={4} marginTop={"5px"}>
+                        <Link href="#" color="inherit">{'Cadastre-se'}</Link>
+                    </Grid>
+                    <Grid item xs={12} md={6}>                  
+                        <Button className="botao" variant="contained">Entrar</Button>
+                    </Grid>
+                    <Grid item xs={12} md={2}>
+                        <img src={carrinho} /> 
+                    </Grid>
+                </Grid> 
+
+                <Navegacao />
+
+            </Grid> 
+        </Grid>      
+      </>
+    )
+  }
+  
+  

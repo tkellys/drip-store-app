@@ -1,72 +1,51 @@
 import React from "react";
-import { Col, Container, Row, } from "react-bootstrap";
+import camisa from '../../assets/destaques/camisa-star-wars.png'
+import tenis from '../../assets/destaques/tenis.png'
+import headphone from '../../assets/destaques/headphone.png'
+
 import { ButtonOficial } from "../botao/Botao";
 import './ColecoesDestaque.css'
 
 
 export const ColecoesDestaque = () => {
+    const colecoes = [{
+        titulo: 'Novo drop Supreme',
+        desconto: '30',
+        image: camisa
+    },{
+        titulo: 'Coleção Adidas',
+        desconto: '30',
+        image: tenis
+    },{
+        titulo: 'Novo Beats Bass',
+        desconto: '30',
+        image: headphone
+    }]
+    
     return (
         <div>
-            <Container xs={12}>
-            <h3 className="TituloDestaque">Coleções em destaque</h3>
-            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                <div class="col">
-                    <div class="card mb-3 rounded-3 shadow-sm">
-                        <div class="card-body">
-                            <Row>
-                                <Col xs={6} md={6} className="destaque">
-                                <small class="text-body-secondary fw-light">30% off "criar componente"</small>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li><h2>Novo drop Supreme</h2></li>
-                                </ul>
-                                <ButtonOficial nome="Comprar" />
-                                </Col>
-                                <Col xs={6} md={6}>
-                                <img class="d-block w-100" alt="" src="src\assets\destaques\camisa-star-wars.png"/>
-                                </Col>
-                            </Row>
-                        </div>
-                    </div>
+            <div className='mb-4' style={{ backgroundColor: '#f9f8fe' }}>
+
+                <div className="container pt-4">
+                    <h3>Coleções em destaque</h3>
                 </div>
-                <div class="col">
-                    <div class="card mb-3 rounded-3 shadow-sm">
-                        <div class="card-body">
-                        <Row>
-                                <Col xs={6} md={6} className="destaque">
-                                <small class="text-body-secondary fw-light">30% off "criar componente"</small>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li><h2>Coleção Adidas</h2></li>
-                                </ul>
-                                <ButtonOficial nome="Comprar" />
-                                </Col>
-                                <Col xs={6} md={6}>
-                                <img class="d-block w-100" alt="" src="src\assets\destaques\tenis.png"/>
-                                </Col>
-                            </Row>
-                        </div>
+
+                    <div className="container text-center">
+                    <div className='row' style={{ gap: '12px' }}>
+                        {colecoes.map((c, index) => {
+                        return (
+                         <div key={index} className={`card col ${c.class ? c.class : ''} `} style={{ backgroundImage: `url(${c.image})`, border: 'none' }}>
+                          <div className="off">{`${c.desconto}% OFF`}</div>
+                         <h3 className="titulo-card">{c.titulo}</h3>
+                            <ButtonOficial id="comprar" nome='Comprar' />
+                         </div>
+                        )
+                        })}
                     </div>
-                </div>
-                <div class="col">
-                    <div class="card mb-3 rounded-3 shadow-sm">
-                        <div class="card-body">
-                        <Row>
-                                <Col xs={6} md={6} className="destaque">
-                                <small class="text-body-secondary fw-light">30% off "criar componente"</small>
-                                <ul class="list-unstyled mt-3 mb-4">
-                                    <li><h2>Novo Beats Bass</h2></li>
-                                </ul>
-                                <ButtonOficial nome="Comprar" />
-                                </Col>
-                                <Col xs={6} md={6}>
-                                <img class="d-block w-100" alt="" src="src\assets\destaques\headphone.png"/>
-                                </Col>
-                            </Row>
-                        </div>
                     </div>
-                </div>
             </div>
-            </Container>
         </div>
+
     );
 
 };

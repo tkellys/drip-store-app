@@ -1,19 +1,32 @@
-.topoPagina{
-    background-color: #FFFFFF !important;
-    width: 1440px !important;
-    height: 192px !important;
-
+.cabecalho{
+    font-family: Inter !important;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    line-height: 44px !important;
+    letter-spacing: -0.01em !important;
+    text-align: left !important;
+    color: #C92071 !important;
+    margin-top: 10px !important ;
 }
 
-#nome-loja{
-    font-family: Inter;
-    font-size: 36px;
-    font-weight: 600;
-    line-height: 44px;
-    letter-spacing: -0.01em;
-    text-align: left;
-    color: #C92071; 
+.imagem-logo{  
+    margin-top: 15px;    
 }
-.nav-link{
-    color: #C92071;
+
+.paper {
+    background-color: #FFFFFF;
+    padding: 16px;
+}
+
+.botao{
+    background-color: #C92071 !important;
+}
+
+.menu{
+    background-color: #FFFFFF;
+    height: 192px;
+}
+
+.menu > div{
+   margin-top: auto;
 }

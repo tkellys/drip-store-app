@@ -1,6 +1,10 @@
 import React from 'react'
 import iconesBrands from '../../assets/iconesBrands/dc_branco.png'
+import iconeFace from '../../assets/iconesBrands/facebook.png'
+import iconeInsta from '../../assets/iconesBrands/instagram.png'
+import iconeTwitter from '../../assets/iconesBrands/twitter.png'
 import './Footer.css'
+import { Row } from 'react-bootstrap'
 
 export const Footer = () => {
   return (
@@ -11,7 +15,12 @@ export const Footer = () => {
         <img class="bi me-2" width="40" src={iconesBrands} height="32"/>
         <span>Digital Store</span>
       </a>
-    
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, commodi voluptatum, at voluptatem aspernatur fuga molestias alias corrupti culpa enim dolor minus facilis officiis iure, cum suscipit magnam odio esse!</p>
+      <div class="d-flex justify-content-around">
+      <img src={iconeFace} />
+      <img src={iconeInsta} />
+      <img src={iconeTwitter}/>
+      </div>
     </div>
    
     <div class="col mb-3">
@@ -52,9 +61,9 @@ export const Footer = () => {
     </div>
     
   </footer>
-  <div >
+  <div class="">
      <p id='data-desenvolvimento' class="text-muted "> © 2022</p>
-  </div>
+     </div>
 </div>
 );
   };

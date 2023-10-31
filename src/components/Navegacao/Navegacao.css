@@ -1,0 +1,22 @@
+
+.item-menu{   
+    font-family: arial;
+    font-weight: 300;
+    letter-spacing: .3rem;
+    color: #000;
+    text-decoration: none;
+}
+
+.item-menu-selecionado{   
+    font-family: arial;
+    font-weight: 300;
+    letter-spacing: .3rem;
+    color: #C92071;
+    
+}
+
+.app-bar{
+    box-shadow: none !important;
+    width: auto !important;
+    margin-left: 5% !important;
+}
