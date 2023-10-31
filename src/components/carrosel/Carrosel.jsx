@@ -38,7 +38,7 @@ export const Carrosel = ()=> {
                   </Row>
               </Container>
           </Carousel.Item>
-          <Carousel.Item interval={500000}>
+          <Carousel.Item interval={1000}>
               <Container>
                   <Row>
                       <Col xs={4} md={4}>
